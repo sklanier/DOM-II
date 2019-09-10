@@ -38,6 +38,7 @@
 .column,
 .columns {
   width: 100%;
+  float: left;
   box-sizing: border-box; }
 
 /* For devices larger than 400px */
@@ -53,7 +54,7 @@
     width: 80%; }
   .column,
   .columns {
-    margin-left: 0%; }
+    margin-left: 4%; }
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
@@ -120,7 +121,6 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  margin: auto;
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
@@ -416,159 +416,3 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
-
-.intro-container {
-  display: block;
-  text-align: center;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
-}
-
-.Hello-text {
-  align-items: center;
-  font-family: AvenirNext-Bold;
-  font-size: 44px;
-  color: #FFFFFF;
-  letter-spacing: -1px; 
-}
-
-.first-container {
-  display: block;
-  background-image: url(/img/Header-bg-pattern.jpg);
-  height: 550px;
-  align-items: center;
-  justify-content: center;
-}
-
-.second-container {
-  display: block;
-  background-color: #0C0C10 !important;
-  height: 1200px;
-  padding-top:65px;
-  padding-left:45px;
-  padding-right:45px;
-}
-
-.git-container {
-  padding: 10px;
-}
-
-.a .img:hover {
-  fill: #5CFAD7;
-}
-
-.linkedin-container {
-  padding: 10px;
-}
-
-h1 {
-  font-family: AvenirNext-Bold;
-  font-size: 44px;
-  color: #FFFFFF;
-  letter-spacing: -1px;
-}
-
-h2 {
-  font-family: AvenirNext-DemiBold;
-  font-size: 28px;
-  color: #FFFFFF;
-  letter-spacing: -0.5px;
-}
-
-h3 {
-  font-family: Flashlight-Regular;
-  font-size: 34px;
-  color: #FFFFFF;
-  letter-spacing: 2px;
-}
-
-h4 {
-  font-family: AvenirNext-Bold;
-  font-size: 14px;
-  color: #FFFFFF;
-}
-
-p {
-  font-family: AvenirNext-Regular;
-  font-size: 14px;
-  color: #717171;
-  text-align: center;
-}
-
-.bluetext {
-  color: #174AE7;
-}
-
-.btn {
-  font-family: AvenirNext-DemiBold;
-  font-size: 16px;
-  color: #FFFFFF;
-  background: #174AE7;
-  border: none;
-  border-radius: 2px; 
-  width: 200px;
-  height: 50px;
-  margin-top: 30px;
-  align-self: auto;
-}
-
-.btn:hover {
-  background: #5CFAD7;
-  border-radius: 2px;
-  color: #000;
-}
-
-.btn-container {
-  text-align: center;
-}
-
-.main-nav {
-  display: flex;
-  font-family: AvenirNext-Medium;
-  font-size: 14px;
-  color: #FFFFFF;
-}
-
-.list-item {
-  padding-top: 10px;
-  padding-bottom: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.list-item:hover {
-  font-family: AvenirNext-Bold;
-  font-size: 14px;
-  color: #5CFAD7;
-  padding-top:8px;
-  transition-timing-function: transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.more-arrow {
-  margin-top: 35px;
-  text-align: center;
-}
-
-.row-1 {
-  display: flex;
-  justify-content: center;
-  background-color: #0C0C10;
-}
-.wrapper {
-  display: flex;
-}
-
-@media screen and (max-width: 680px) {
-  .wrapper {
-    display: block;
-    text-align: center;
-  }
-}
-
-.prjctscntnr {
-  margin: 25px;
-}
